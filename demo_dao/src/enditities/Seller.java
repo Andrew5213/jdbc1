@@ -8,7 +8,7 @@ public class Seller implements Serializable {
     private Integer id;
     private String name ,email;
     private Date birthdata;
-    private Double salary;
+    private Double baseSalary;
     private Departament departament;
     public Seller(){
 
@@ -19,7 +19,7 @@ public class Seller implements Serializable {
         this.name = name;
         this.email = email;
         this.birthdata = birthdata;
-        this.salary = salary;
+        this.baseSalary = salary;
         this.departament = departament;
 
     }
@@ -31,7 +31,7 @@ public class Seller implements Serializable {
                 ", name='" + name + '\'' +
                 ", email='" + email + '\'' +
                 ", birthdata=" + birthdata +
-                ", salary=" + salary +
+                ", salary=" + baseSalary +
                 ", departament=" + departament +
                 '}';
     }
@@ -81,12 +81,12 @@ public class Seller implements Serializable {
         this.birthdata = birthdata;
     }
 
-    public Double getSalary() {
-        return salary;
+    public Double getBaseSalary() {
+        return baseSalary;
     }
 
-    public void setSalary(Double salary) {
-        this.salary = salary;
+    public void setBaseSalary(Double baseSalary) {
+        this.baseSalary = baseSalary;
     }
 
     public Departament getDepartament() {
